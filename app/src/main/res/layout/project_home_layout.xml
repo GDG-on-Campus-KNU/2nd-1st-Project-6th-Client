@@ -33,7 +33,7 @@
             android:text="@string/hashtag"
             android:textSize="30dp"
             android:gravity="left"
-            android:textColor="@color/black"/>
+            android:textColor="#FFFF0033"/>
     </LinearLayout>
 
     <androidx.viewpager2.widget.ViewPager2
