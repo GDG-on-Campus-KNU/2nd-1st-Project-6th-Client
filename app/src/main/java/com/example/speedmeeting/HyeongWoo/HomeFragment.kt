@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
 
         val datas = mutableListOf<String>()
         for(i in 1..20){
-            datas.add("Item $i")
+            datas.add("소모임 만들 사람 선착순 눈치게임 $i")
         }
 
         val layoutManager = LinearLayoutManager(activity)
