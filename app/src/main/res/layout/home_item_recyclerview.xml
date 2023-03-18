@@ -6,7 +6,7 @@
     android:layout_height="100dp"
     android:orientation="horizontal"
     android:padding="16dp"
-    android:layout_margin="8dp">
+    android:layout_margin="20dp">
 
     <TextView
         android:id="@+id/item_data"
