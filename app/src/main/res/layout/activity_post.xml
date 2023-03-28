@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <Button
+        android:id="@+id/postComplete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="등록"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/postEditTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:hint="제목 입력"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/postTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postTitle"
+        app:layout_constraintTop_toTopOf="@+id/postTitle" />
+
+    <TextView
+        android:id="@+id/postEditCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:hint="선택해주세요"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/postCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postCategory"
+        app:layout_constraintTop_toTopOf="@+id/postCategory" />
+
+    <EditText
+        android:id="@+id/postEditLink"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:hint="openkakao"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/postLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postLink"
+        app:layout_constraintTop_toTopOf="@+id/postLink" />
+
+    <EditText
+        android:id="@+id/postEditRecruit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:hint="1/10"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/postRecruit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postRecruit"
+        app:layout_constraintTop_toTopOf="@+id/postRecruit" />
+
+    <EditText
+        android:id="@+id/postEditContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/content_box"
+        android:gravity="start"
+        android:hint="내용 입력"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/postComplete"
+
+        app:layout_constraintTop_toBottomOf="@id/uploadPhotoLayout" />
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="제목"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postToolbar" />
+
+    <TextView
+        android:id="@+id/postTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="#태그"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/postTitle"
+        app:layout_constraintTop_toBottomOf="@id/postTitle" />
+
+    <TextView
+        android:id="@+id/postEditTag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:hint="선택해주세요"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/postTag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postTag"
+        app:layout_constraintTop_toTopOf="@+id/postTag" />
+
+    <TextView
+        android:id="@+id/postCategory"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="카테고리"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/postTag"
+        app:layout_constraintTop_toBottomOf="@id/postTag" />
+
+    <TextView
+        android:id="@+id/postLink"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="채널링크"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/postCategory"
+        app:layout_constraintTop_toBottomOf="@id/postCategory" />
+
+    <TextView
+        android:id="@+id/postRecruit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="모집인원"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/postLink"
+        app:layout_constraintTop_toBottomOf="@id/postLink" />
+
+    <TextView
+        android:id="@+id/postContent"
+        android:layout_width="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="추가정보"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/postRecruit"
+        app:layout_constraintTop_toBottomOf="@+id/postRecruit" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/uploadPhotoLayout"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/bg_uploadphoto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postContent">
+
+        <ImageButton
+            android:id="@+id/uploadPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_camera"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/uploadPhotoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/uploadPhotoButton"
+            android:text="0/5"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/postToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="소모임 작성" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
