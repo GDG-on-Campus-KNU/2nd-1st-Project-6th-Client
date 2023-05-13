@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmallGroupDetailActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/postToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="축구 할 사람" />
+
+    <TextView
+        android:id="@+id/postTitle"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="체크 링크"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postToolbar" />
+
+    <EditText
+        android:id="@+id/postEditTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="openkakao/비공개"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/postTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/postTitle"
+        app:layout_constraintTop_toTopOf="@+id/postTitle" />
+
+    <TextView
+        android:id="@+id/smallGroupDetailRecruit"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="모집 인원"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/postTitle"
+        app:layout_constraintStart_toStartOf="@id/postTitle"/>
+
+    <EditText
+        android:id="@+id/smallEditGroupDetailRecruit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2/11"
+        android:textSize="15sp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/smallGroupDetailRecruit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smallGroupDetailRecruit"
+        app:layout_constraintTop_toTopOf="@+id/smallGroupDetailRecruit" />
+    <TextView
+        android:id="@+id/smallGroupTag"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="#태그"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/smallGroupDetailRecruit"
+        app:layout_constraintStart_toStartOf="@id/smallGroupDetailRecruit"/>
+
+    <EditText
+        android:id="@+id/smallEditGroupTag"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="#축구 # soccer"
+        android:textSize="15sp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/smallGroupTag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smallGroupTag"
+        app:layout_constraintTop_toTopOf="@+id/smallGroupTag" />
+
+    <TextView
+        android:id="@+id/smallGroupPlus"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="추가정보"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/smallGroupTag"
+        app:layout_constraintStart_toStartOf="@id/smallGroupTag"/>
+
+    <ImageView
+        android:id="@+id/temp"
+        android:src="@drawable/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/smallGroupPlus"
+        app:layout_constraintStart_toStartOf="@id/smallGroupPlus"/>
+    <EditText
+        android:id="@+id/postEditContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/content_box"
+        android:gravity="start"
+        android:hint="내용 입력"
+        android:padding="10dp"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/smallGroupDetailSign"
+
+        app:layout_constraintTop_toBottomOf="@id/temp" />
+
+    <Button
+        android:id="@+id/smallGroupDetailSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신청하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/smallGroupDetailCancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/smallGroupDetailCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="취소하기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smallGroupDetailSign" />
+</androidx.constraintlayout.widget.ConstraintLayout>
